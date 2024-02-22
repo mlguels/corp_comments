@@ -26,8 +26,11 @@ export default function FeedbackForm({ onAddToList }: FeedbackFormProps) {
     // basic validation
     if (text.includes("#") && text.length > 5) {
       setShowValidIndicator(true);
+      setTimeout(() => setShowValidIndicator(false), 2000);
     } else {
       setShowInvalidIndicator(true);
+      setTimeout(() => setShowInvalidIndicator(false), 2000);
+      return;
     }
 
     onAddToList(text);
