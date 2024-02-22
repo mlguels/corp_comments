@@ -1,4 +1,4 @@
-import { useFeedbackItemsContext } from "../../context/FeedbackItemsContextProvider";
+import { useFeedbackItemsContext } from "../../lib/hooks";
 import FeedbackForm from "../feedback/FeedbackForm";
 import Logo from "../Logo";
 import PageHeading from "../PageHeading";
